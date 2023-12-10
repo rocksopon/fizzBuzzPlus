@@ -38,4 +38,9 @@ class FizzBuzzPlusApplicationTests {
 		assertEquals("Fizz", fizzBuzzPlusApplication.mainFizzBuzz(32));
 	}
 
+	@Test
+	void contain5ExpectedBuzz() {
+		assertEquals("Buzz", fizzBuzzPlusApplication.mainFizzBuzz(52));
+	}
+
 }
