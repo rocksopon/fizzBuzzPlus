@@ -13,8 +13,8 @@ public class FizzBuzzPlusApplication {
 	}
 
 	public String mainFizzBuzz(int inputNumber) {
-
-		var returnString = fizzBuzzCheck(inputNumber);
+		var returnString = String.valueOf(inputNumber);
+		returnString = fizzBuzzCheck(inputNumber);
 		if (returnString.equalsIgnoreCase("FizzBuzz")) {
 			return returnString;
 		}
@@ -23,7 +23,8 @@ public class FizzBuzzPlusApplication {
 	}
 
 	public String fizzBuzzCheck(int inputNumber) {
-		String returnString = "";
+
+		String returnString = String.valueOf(inputNumber);
 
 		if (inputNumber % 3 == 0) {
 			returnString = "Fizz";
@@ -41,7 +42,7 @@ public class FizzBuzzPlusApplication {
 	}
 
 	public String fizzBuzzPlusCheck(int inputNumber) {
-		String returnString = "";
+		String returnString = String.valueOf(inputNumber);
 
 		boolean containThree = false;
 		boolean containFive = false;

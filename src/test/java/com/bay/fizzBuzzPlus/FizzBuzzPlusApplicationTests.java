@@ -48,4 +48,9 @@ class FizzBuzzPlusApplicationTests {
 		assertEquals("FizzBuzz", fizzBuzzPlusApplication.mainFizzBuzz(35));
 	}
 
+	@Test
+	void canNotDivided3Or5() {
+		assertEquals("1", fizzBuzzPlusApplication.mainFizzBuzz(1));
+	}
+
 }
