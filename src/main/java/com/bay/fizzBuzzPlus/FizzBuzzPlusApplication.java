@@ -62,6 +62,9 @@ public class FizzBuzzPlusApplication {
 		if (containFive) {
 			returnString = "Buzz";
 		}
+		if (containThree && containFive) {
+			returnString = "FizzBuzz";
+		}
 
 		return returnString;
 	}
