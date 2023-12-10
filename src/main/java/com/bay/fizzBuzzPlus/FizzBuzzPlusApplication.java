@@ -10,9 +10,14 @@ public class FizzBuzzPlusApplication {
 
 		SpringApplication.run(FizzBuzzPlusApplication.class, args);
 
+		for (int i = 1; i < 101; i++)
+		{
+			String answer = mainFizzBuzz(i);
+			System.out.println(answer);
+		}
 	}
 
-	public String mainFizzBuzz(int inputNumber) {
+	public static String mainFizzBuzz(int inputNumber) {
 		var returnString = String.valueOf(inputNumber);
 		returnString = fizzBuzzCheck(inputNumber);
 		if (returnString.equalsIgnoreCase("FizzBuzz")) {
@@ -22,7 +27,7 @@ public class FizzBuzzPlusApplication {
 		return returnString;
 	}
 
-	public String fizzBuzzCheck(int inputNumber) {
+	public static String fizzBuzzCheck(int inputNumber) {
 
 		String returnString = String.valueOf(inputNumber);
 
@@ -41,7 +46,7 @@ public class FizzBuzzPlusApplication {
 		return returnString;
 	}
 
-	public String fizzBuzzPlusCheck(int inputNumber) {
+	public static String fizzBuzzPlusCheck(int inputNumber) {
 		String returnString = String.valueOf(inputNumber);
 
 		boolean containThree = false;
