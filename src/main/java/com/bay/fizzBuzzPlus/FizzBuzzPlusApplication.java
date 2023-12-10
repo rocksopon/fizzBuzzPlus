@@ -9,7 +9,22 @@ public class FizzBuzzPlusApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(FizzBuzzPlusApplication.class, args);
-		
+
+	}
+
+	public String mainFizzBuzz(int inputNumber) {
+
+		return fizzBuzzCheck(inputNumber);
+	}
+
+	public String fizzBuzzCheck(int inputNumber) {
+		String returnString = "";
+
+		if (inputNumber % 3 == 0) {
+			returnString = "Fizz";
+		}
+
+		return returnString;
 	}
 
 }
