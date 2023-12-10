@@ -24,6 +24,10 @@ public class FizzBuzzPlusApplication {
 			returnString = "Fizz";
 		}
 
+		if (inputNumber % 5 == 0) {
+			returnString = "Buzz";
+		}
+
 		return returnString;
 	}
 

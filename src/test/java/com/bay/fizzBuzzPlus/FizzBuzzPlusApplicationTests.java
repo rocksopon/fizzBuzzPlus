@@ -23,4 +23,9 @@ class FizzBuzzPlusApplicationTests {
 		assertEquals("Fizz", fizzBuzzPlusApplication.mainFizzBuzz(3));
 	}
 
+	@Test
+	void dividedBy5ExpectedBuzz() {
+		assertEquals("Buzz", fizzBuzzPlusApplication.mainFizzBuzz(5));
+	}
+
 }
