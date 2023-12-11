@@ -25,10 +25,11 @@ Condition
 - [Testing](#testing)
 
 ## Installation
-- Create directory that you wanna keet the project
+- Create directory that you wanna keep the project
 - Open Terminal/cmd
 
 > git init
+> 
 > git pull git@github.com:rocksopon/fizzBuzzPlus.git
 - Import FizzBuzzPlus project into your IDE
 - Open termianal in your IDE
